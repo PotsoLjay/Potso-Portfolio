@@ -11,31 +11,207 @@
   <body>
     <header>
       <nav>
-        <h2>Potso Lejapela</h2>
+        <h2 class="logo">Potso Lejapela</h2>
 
-        <ul>
+        <div class="menu-toggle">☰</div>
+
+        <ul class="nav-links">
           <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
+
+          <li><a href="#about">About</a></li>
+
+          <li><a href="#projects">Projects</a></li>
+
+          <li><a href="#skills">Skills</a></li>
+
+          <li><a href="#experience">Experience</a></li>
+
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
       <section class="hero">
-        <h1>Hi, I'm Potso Lejapela</h1>
+        <div class="hero-content">
+          <p class="greeting">Hello, I'm</p>
 
-        <h2>Final-Year Information Technology Student</h2>
+          <h1>Potso <span>Lejapela</span></h1>
 
-        <p>Software Developer | Secure Software Enthusiast</p>
+          <h2>Final-Year Information Technology Student</h2>
 
-        <button>View Projects</button>
+          <p class="hero-text">
+            I enjoy building software that solves real-world problems through
+            clean code, thoughtful design, and continuous learning. My interests
+            include Software Development, Artificial Intelligence, and
+            Cybersecurity.
+          </p>
 
-        <button>Download CV</button>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="#contact" class="btn-outline">Contact Me</a>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="about">
+        <h2>About Me</h2>
+
+        <p>
+          I am Potso Lejapela, a final-year Information Technology student with
+          a passion for software development, artificial intelligence, and
+          secure software systems. I enjoy building practical applications that
+          solve real-world problems while continuously improving my programming
+          and problem-solving skills.
+        </p>
+
+        <div class="about-info">
+          <div class="card">
+            <h3>Education</h3>
+            <p>BSc Information Technology</p>
+            <p>North-West University</p>
+          </div>
+
+          <div class="card">
+            <h3>Experience</h3>
+            <p>Student Assistant</p>
+            <p>North-West University</p>
+          </div>
+
+          <div class="card">
+            <h3>Interests</h3>
+            <p>Software Development</p>
+            <p>Artificial Intelligence</p>
+            <p>Cybersecurity</p>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="projects">
+        <h2>Projects</h2>
+
+        <div class="project-container">
+          <div class="project-card">
+            <div class="project-image">Project Screenshot</div>
+
+            <h3>Police Management System</h3>
+
+            <p>
+              A digital police management system developed to replace the manual
+              docket process by securely recording and managing criminal cases.
+            </p>
+
+            <h4>Technologies</h4>
+
+            <p>C# • SQL • Windows Forms</p>
+
+            <div class="project-links">
+              <a href="#">GitHub</a>
+              <a href="#">Live Demo</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">Project Screenshot</div>
+
+            <h3>GradeVault</h3>
+
+            <p>
+              A student perfomance tracking application that helps students
+              monitor their marks, identify at-risk modules, and improve
+              academic perfomance through visual progress tracking.
+            </p>
+
+            <h4>Technologies</h4>
+
+            <p>C# • SQL</p>
+
+            <div class="project-links">
+              <a href="#">GitHub</a>
+              <a href="#">Live Demo</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="skills">
+        <h2>Technical Skills</h2>
+
+        <div class="skills-container">
+          <div class="skill">C#</div>
+          <div class="skill">Python</div>
+          <div class="skill">Java</div>
+          <div class="skill">C++</div>
+
+          <div class="skill">HTML5</div>
+          <div class="skill">CSS3</div>
+          <div class="skill">JavaScript</div>
+
+          <div class="skill">SQL</div>
+
+          <div class="skill">Git</div>
+          <div class="skill">GitHub</div>
+
+          <div class="skill">Data Structures & Algorithms</div>
+
+          <div class="skill">Artificial Intelligence</div>
+
+          <div class="skill">Microsoft Excel</div>
+
+          <div class="skill">Problem Solving</div>
+
+          <div class="skill">Analytical Thinking</div>
+
+          <div class="skill">Software Development</div>
+        </div>
+      </section>
+      <section id="experience" class="experience">
+        <h2>Experience</h2>
+
+        <div class="experience-card">
+          <h3>Student Assistant</h3>
+
+          <h4>North-West University</h4>
+
+          <p>2025 - Present</p>
+
+          <ul>
+            <li>
+              Assisted students with programming concepts and practical coding
+              sessions.
+            </li>
+
+            <li>Troubleshot and resolved C# programming issues.</li>
+
+            <li>Tested applications and identified software bugs.</li>
+
+            <li>Reviewed student code and provided constructive feedback.</li>
+
+            <li>Worked alongside lecturers to support practical learning.</li>
+          </ul>
+        </div>
+      </section>
+      <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+
+        <p>
+          I am always open to discussing software development opportunities,
+          internships, collaborations, and innovative projects.
+        </p>
+
+        <div class="contact-details">
+          <p><strong>Email:</strong> your-email@example.com</p>
+
+          <p><strong>Phone:</strong> +27 XX XXX XXXX</p>
+
+          <p><strong>Location:</strong> South Africa</p>
+
+          <p><strong>LinkedIn:</strong> Coming Soon</p>
+
+          <p><strong>GitHub:</strong> Coming Soon</p>
+        </div>
       </section>
     </main>
+    <footer>
+      <p>© 2026 Potso Lejapela. All Rights Reserved.</p>
+    </footer>
 
     <script src="js/script.js"></script>
   </body>
