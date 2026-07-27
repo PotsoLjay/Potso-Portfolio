@@ -5,52 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Potso Lejapela | Software Developer</title>
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
     <header>
       <nav>
-        <h2 class="logo">Potso Lejapela</h2>
-
-        <div class="menu-toggle">☰</div>
+        <a href="#hero" class="logo">
+          <img src="images/logo1.png" alt="PL Logo" />
+        </a>
 
         <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-
           <li><a href="#about">About</a></li>
-
           <li><a href="#projects">Projects</a></li>
-
           <li><a href="#skills">Skills</a></li>
-
           <li><a href="#experience">Experience</a></li>
-
           <li><a href="#contact">Contact</a></li>
         </ul>
+
+        <div class="nav-controls">
+          <button class="theme-toggle" id="theme-toggle">
+            <i class="fas fa-moon"></i>
+          </button>
+
+          <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
       </nav>
     </header>
 
     <main>
-      <section class="hero">
+      <section id="hero" class="hero">
         <div class="hero-content">
           <p class="greeting">Hello, I'm</p>
 
           <h1>Potso <span>Lejapela</span></h1>
 
-          <h2>Final-Year Information Technology Student</h2>
+          <h2>Aspiring Software Developer | Final-Year IT Student</h2>
 
           <p class="hero-text">
-            I enjoy building software that solves real-world problems through
-            clean code, thoughtful design, and continuous learning. My interests
-            include Software Development, Artificial Intelligence, and
-            Cybersecurity.
+            I'm a final-year Information Technology student passionate about
+            building software that solves real-world problems. I enjoy
+            transforming ideas into reliable applications through clean code,
+            thoughtful design, and continuous learning, with growing interests
+            in Artificial Intelligence and Cybersecurity.
           </p>
 
           <div class="hero-buttons">
-            <a href="#projects" class="btn">View Projects</a>
+            <a
+              href="resume/PotsoLejapela_Resume.pdf"
+              class="btn"
+              target="_blank"
+            >
+              View Resume
+            </a>
             <a href="#contact" class="btn-outline">Contact Me</a>
           </div>
+        </div>
+
+        <div class="hero-image">
+          <img src="images/photo1.jpg" alt="Potso Lejapela" />
         </div>
       </section>
       <section id="about" class="about">
@@ -87,6 +106,10 @@
       </section>
       <section id="projects" class="projects">
         <h2>Projects</h2>
+        <p class="section-subtitle">
+          Software projects that demonstrate my technical skills and
+          problem-solving approach.
+        </p>
 
         <div class="project-container">
           <div class="project-card">
@@ -115,14 +138,25 @@
             <h3>GradeVault</h3>
 
             <p>
-              A student perfomance tracking application that helps students
-              monitor their marks, identify at-risk modules, and improve
-              academic perfomance through visual progress tracking.
+              A student performance tracking application designed to help
+              students monitor academic progress, identify at-risk modules, and
+              make informed decisions through a clear and interactive dashboard.
             </p>
+
+            <h4>Key Features</h4>
+            <ul class="project-features">
+              <li>Track academic performance</li>
+              <li>Identify at-risk modules</li>
+              <li>Visual progress dashboard</li>
+            </ul>
 
             <h4>Technologies</h4>
 
-            <p>C# • SQL</p>
+            <div class="tech-stack">
+              <span>C#</span>
+
+              <span>SQL</span>
+            </div>
 
             <div class="project-links">
               <a href="#">GitHub</a>
@@ -133,6 +167,9 @@
       </section>
       <section id="skills" class="skills">
         <h2>Technical Skills</h2>
+        <p class="section-subtitle">
+          Technologies and tools I enjoy working with.
+        </p>
 
         <div class="skills-container">
           <div class="skill">C#</div>
@@ -164,6 +201,9 @@
       </section>
       <section id="experience" class="experience">
         <h2>Experience</h2>
+        <p class="section-subtitle">
+          My professional and academic experience in software development.
+        </p>
 
         <div class="experience-card">
           <h3>Student Assistant</h3>
@@ -192,20 +232,44 @@
         <h2>Get In Touch</h2>
 
         <p>
-          I am always open to discussing software development opportunities,
-          internships, collaborations, and innovative projects.
+          I'm always open to discussing software development opportunities,
+          internships, collaborations, and innovative ideas. Feel free to get in
+          touch if you'd like to connect.
         </p>
 
         <div class="contact-details">
-          <p><strong>Email:</strong> your-email@example.com</p>
+          <p>
+            <i class="fas fa-envelope"></i>
+            45083150@mynwu.ac.za
+          </p>
 
-          <p><strong>Phone:</strong> +27 XX XXX XXXX</p>
+          <p>
+            <i class="fas fa-phone"></i>
+            +27 76 738 6069
+          </p>
 
-          <p><strong>Location:</strong> South Africa</p>
+          <p>
+            <i class="fas fa-location-dot"></i>
+            South Africa
+          </p>
 
-          <p><strong>LinkedIn:</strong> Coming Soon</p>
+          <div class="social-icons">
+            <a
+              href="https://github.com/YOUR_USERNAME"
+              target="_blank"
+              aria-label="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
 
-          <p><strong>GitHub:</strong> Coming Soon</p>
+            <a
+              href="https://linkedin.com/in/YOUR_PROFILE"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
         </div>
       </section>
     </main>
