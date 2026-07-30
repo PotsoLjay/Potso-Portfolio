@@ -926,6 +926,11 @@ footer p {
     flex-wrap: nowrap;
   }
 
+  .hero-buttons .btn {
+    min-width: 180px;
+    text-align: center;
+  }
+
   .hero-slogan {
     font-size: 1rem;
     text-align: left;
