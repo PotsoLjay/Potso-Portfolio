@@ -50,3 +50,56 @@ toggle.addEventListener("click", () => {
     localStorage.setItem("theme", "dark");
   }
 });
+
+//text switch animation
+const roles = [
+    "a Final-Year IT",
+    "Student"
+];
+
+const typingElement = document.getElementById("typing");
+
+let current = 0;
+
+typingElement.textContent = roles[current];
+
+setInterval(() => {
+
+    typingElement.classList.add("switching");
+
+    setTimeout(() => {
+
+        current = (current + 1) % roles.length;
+
+        typingElement.textContent = roles[current];
+
+        typingElement.classList.remove("switching");
+
+    }, 250);
+
+}, 2500);
+
+//timeline animation
+const timelineItems = document.querySelectorAll(".timeline-item");
+
+const timelineObserver = new IntersectionObserver((entries) => {
+
+    entries.forEach((entry) => {
+
+        if (entry.isIntersecting) {
+
+            entry.target.classList.add("show");
+
+        }
+
+    });
+
+}, {
+    threshold: 0.2
+});
+
+timelineItems.forEach((item) => {
+
+    timelineObserver.observe(item);
+
+});
